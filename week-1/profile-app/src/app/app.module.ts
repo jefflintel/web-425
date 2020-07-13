@@ -1,3 +1,11 @@
+/* ============================================
+ ; Title:  app.module.ts
+ ; Author: Professor Krasso
+ ; Date:   12 July 2020
+ ; Modified by: Jeff Lintel
+ ; Description: app module
+ ===========================================*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
