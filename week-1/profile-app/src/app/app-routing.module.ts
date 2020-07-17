@@ -1,3 +1,11 @@
+/* ============================================
+ ; Title:  app-routing.module.ts
+ ; Author: Professor Krasso
+ ; Date:   12 July 2020
+ ; Modified by: Jeff Lintel
+ ; Description: app-routing module
+ ===========================================*/
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

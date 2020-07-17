@@ -1,3 +1,11 @@
+/* ============================================
+ ; Title:  my-details.component.ts
+ ; Author: Professor Krasso
+ ; Date:   12 July 2020
+ ; Modified by: Jeff Lintel
+ ; Description: my-details component
+ ===========================================*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
