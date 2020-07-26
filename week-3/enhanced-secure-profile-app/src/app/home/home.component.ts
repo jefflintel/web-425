@@ -16,8 +16,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  isLoggedIn: boolean;
-
   constructor() {
 
   }
