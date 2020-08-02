@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="txtSearch">
+      <input type="text" id="txtSearch" class="form-control" [formControl]="txtSearchControl" placeholder="Search by Name">
+    </div>
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" class="text-info">Composer ID</th>
+          <th scope="col" class="text-info">Full Name</th>
+          <th scope="col" class="text-info">Genre</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row" class="text-light"><a routerLink='/composer-details/{{composer.composerId}}'>{{composer.composerId }}</a></td>
+          <td scope="row" class="text-light">{{ composer.fullName }}</td>
+          <td scope="row" class="text-light">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
