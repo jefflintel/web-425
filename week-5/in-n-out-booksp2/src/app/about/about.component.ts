@@ -1,19 +1,19 @@
 /* ============================================
- ; Title:  contact.component.ts
+ ; Title:  about.component.ts
  ; Author: Professor Krasso
  ; Date:   5 August 2020
  ; Modified by: Jeff Lintel
- ; Description: contact component
+ ; Description: about component
  ===========================================*/
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor() { }
 
