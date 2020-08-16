@@ -1,0 +1,74 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="logo"></div>
+    <img src="../../assets/gpa-calculator-app.png" height="80" />
+    <div style="width: 80%;">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/">Home</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br />
+<div fxLayout="column">
+  <mat-card>
+    <mat-card-title style="text-align: center; height: 400%;">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-sum"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#2c3e50"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <path d="M18 16v2a1 1 0 0 1 -1 1h-11l6-7l-6-7h11a1 1 0 0 1 1 1v2" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-superscript"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#2c3e50"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <path d="M5 7l8 10m-8 0l8 -10" />
+        <path d="M21 11h-4l3.5 -4a1.73 1.73 0 0 0 -3.5 -2" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-math"
+        width="44"
+        height="44"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#2c3e50"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <path d="M16 13l4 4m0 -4l-4 4" />
+        <path d="M20 5h-7l-4 14l-3 -6h-2" />
+      </svg>
+      = 404?!?!
+    </mat-card-title>
+    <mat-card-content style="text-align: center;">
+      <p>
+        That's definitely not a GPA. Did you mean to calculate something else?
+      </p>
+      <button mat-raised-button color="accent" routerLink="/">
+        Try Clicking Here
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
