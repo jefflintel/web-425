@@ -1,0 +1,65 @@
+<div fxLayout="row wrap" fxLayoutGap="1em">
+  <div fxFlex>
+    <div fxLayout="column">
+      <div>
+        <mat-card class="service-card services">
+          <mat-card-title>Services</mat-card-title>
+          <br><br>
+          <mat-card-content>
+            <mat-list>
+              <mat-list-item *ngFor="let service of checkboxItemsList">
+                <mat-checkbox [(ngModel)]="service.isChecked" (change)="changeCheck()">
+                  {{ service.label }}
+                </mat-checkbox>
+              </mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <mat-card class="service-card standard-fees">
+      <mat-card-title>Standard Fees</mat-card-title>
+      <br><br>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item>
+            <mat-label>Parts Price: </mat-label>
+            <input type="number" min="0" step="0.01" required [(ngModel)]="partsPrice" (change)="partsChange()">
+          </mat-list-item>
+          <br>
+          <mat-list-item>
+            <mat-label>Labor (@$50/hour) </mat-label>
+            <input type="number" min="0" step="0.25" required [(ngModel)]="laborHours" (change)="laborChange()">
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+      <p>At Bob's Computer Repair we really value our customers. Our highly skilled technicians average 15 years in the industry, so you can rest easy knowing
+        they'll be able to take care of you quickly and professionally.
+      </p>
+    </mat-card>
+  </div>
+</div>
+<div>
+  <button mat-raised-button color="primary" class="invoice-button" mat-button background-color="accent" (click)="generateInvoice()" [disabled]="invoiceTotal == 0">Generate Invoice</button>
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="1em">
+  <div fxFlex>
+    <div fxLayout="column">
+      <mat-card class="more-content-card">
+        <mat-card-title>Other Services</mat-card-title>
+        <br><br>
+        <mat-card-content>
+          <h2>We're always working on new things at Bob's Computers!</h2>
+          <p>One of our newest projects is Zoom consultations. You'll be able to chat with one of our skilled technicians about your issues, discuss your
+            needs and your budget, and set up a time to drop your computer off.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

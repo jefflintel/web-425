@@ -1,0 +1,20 @@
+<mat-dialog-content>
+  <h2>Your Invoice</h2>
+  <mat-card>
+    <mat-card-content>
+    <h3>Standard Services:</h3>
+    <p *ngFor="let item of checkedItems">
+      {{ item.label }}
+    </p>
+    <h3>Standard Fees:</h3>
+    <p>Parts Price: ${{partsPrice | number: '1.2' }}
+    </p>
+    <p>Labor Total (@ $50/hour): ${{ laborHours * 50 | number: '1.2' }}
+    </p>
+    <h2>Your Total: ${{ invoiceTotal | number: '1.2' }}</h2>
+    </mat-card-content>
+  </mat-card>
+  <mat-dialog-actions>
+    <button mat-raised-button color="accent" mat-dialog-close >Close</button>
+  </mat-dialog-actions>
+</mat-dialog-content>
