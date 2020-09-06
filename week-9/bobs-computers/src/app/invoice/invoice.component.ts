@@ -102,13 +102,16 @@ export class InvoiceComponent implements OnInit {
     }
 
     partsChange() {
+      /*if (this.partsPrice === this.partsPrice) {
       this.invoiceTotal += this.partsPrice;
-      console.log(this.invoiceTotal);
+      } else {
+        this.invoiceTotal = 0 + this.partsPrice;
+      }*/
+      this.invoiceTotal += this.partsPrice;
     }
 
     laborChange() {
       this.invoiceTotal += this.laborHours * 50;
-      console.log(this.invoiceTotal)
     }
 
     generateInvoice() {

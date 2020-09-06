@@ -1,3 +1,10 @@
+/* ============================================
+ ; Title:  invoice-dialog.component.ts
+ ; Author: Jeff Lintel
+ ; Date:   4 September 2020
+ ; Description: invoice dialog component
+ ===========================================*/
+
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
@@ -13,6 +20,8 @@ export class InvoiceDialogComponent implements OnInit {
   @Input() invoiceTotal: number;
   @Input() partsPrice: number;
   @Input() laborHours: number;
+
+  invoiceDate: number = Date.now();
 
   constructor(private dialogRef: MatDialogRef<InvoiceDialogComponent>, @Inject(MAT_DIALOG_DATA)data) {
     this.laborHours = data.laborHours,

@@ -1,3 +1,10 @@
+/* ============================================
+ ; Title:  home.component.ts
+ ; Author: Jeff Lintel
+ ; Date:   30 August 2020
+ ; Description: home component
+ ===========================================*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
